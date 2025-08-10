@@ -35,7 +35,7 @@ body{
 
 .accordion_item{
     border: 1px solid gray;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 10px 0px;
     padding:  10px;
 }
