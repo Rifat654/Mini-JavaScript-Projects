@@ -3,7 +3,7 @@ const data = [
     id: "1",
     question: "What are accordion components?",
     answer:
-      "Accordion components are user interface elements used for organizing and presenting content in a collapsible manner. They typically consist of a header, content, and an expand/collapse action.",
+      "Accordion components are user interface elements used for organizing and presenting content in a collapsible manner. They typically consist of a header, content, and an positive  expand/collapse action.",
   },
   {
     id: "2",
