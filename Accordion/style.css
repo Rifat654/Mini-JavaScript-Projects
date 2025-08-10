@@ -45,4 +45,10 @@ body{
 
 .accordion_tittle.active + .accordion_text{
     display: block;
+   
+}
+
+.accordion_tittle.active i{
+    transform: rotate(45deg);
+      transition: transform 0.3s ease;
 }
