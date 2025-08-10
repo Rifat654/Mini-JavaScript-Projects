@@ -47,7 +47,7 @@ accordionData()
 
 const accordionItems = document.querySelectorAll(".accordion_tittle");
 
-console.log(accordionItems);
+// console.log(accordionItems);
 
 accordionItems.forEach( CurrentItem =>{
     CurrentItem.addEventListener("click", (e) =>{
