@@ -30,10 +30,12 @@ const accordionContainer = document.querySelector(".accordion");
 function accordionData() {
     accordionContainer.innerHTML = data.map((item) =>`
      <div class="accordion_item">
-       <div class="accordion_tittle">
+      
+     <div class="accordion_tittle">
        <h3>${item.question}</h3>
       <i class="fa-solid fa-plus"></i>
-       </div>
+     
+      </div>
        <div class="accordion_text">
        <p >${item.answer}</p>
        </div>
