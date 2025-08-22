@@ -61,7 +61,7 @@ function startQuiz() {
 }
 
 function showQuestion() {
-  resetState(); // ✅ fixed spelling
+  resetState();
   let currentQuestion = questions[currentQuestionIndex];
   let questionNo = currentQuestionIndex + 1;
   questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
@@ -72,12 +72,12 @@ function showQuestion() {
     button.classList.add("btn");
     ans_btn.appendChild(button);
 
-    // ✅ Add event listener to check answer
+  
     button.addEventListener("click", () => selectAnswer(answer));
   });
 }
 
-function resetState() { // ✅ fixed spelling
+function resetState() { 
   nextBtn.style.display = "none";
   while (ans_btn.firstChild) {
     ans_btn.removeChild(ans_btn.firstChild);
@@ -88,7 +88,6 @@ function selectAnswer(answer) {
   if (answer.isCorrect) {
     score++;
   }
-  nextBtn.style.display = "block"; // ✅ show next button after answering
+  nextBtn.style.display = "block"; 
 }
-
-startQuiz();
+startQuiz()
