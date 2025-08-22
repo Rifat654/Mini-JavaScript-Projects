@@ -35,29 +35,38 @@ const questions = [
 
 
 //  selecting elements
-const startBtn = document.getElementById("start-btn");
+const startButton = document.getElementById("start-btn");
 const questionContainer = document.getElementById("question-container");
-const questionElement = document.getElementById("question")
-const ansElement = document.getElementById("btn")
+const questionElement = document.getElementById("question");
+const answerButton = document.getElementById("answer-buttons")
+
+startButton.addEventListener("click", startQuiz);
 
 
-let scuffleQuestions , currentQuestionIndex
+// new variables
+let shuffledQuestions, currentQuestionIndex;
 
-startBtn.addEventListener("click", startQuiz)
 
 //  start quiz
 function startQuiz() {
+  console.log("Started")
+  startButton.classList.add("hide")
+  shuffledQuestions = questions.sort(() => Math.random() - .5)
+  currentQuestionIndex = 0
+  questionContainer.classList.remove("hide")
+  setNextQuestion()
+  
 
 }
 
 // next question
 function setNextQuestion() {
-  
+  showQuestion( shuffledQuestions[currentQuestionIndex])
 
 }
 
 // show question
-function showQuestion(){
+function showQuestion(question){
 
   
 
