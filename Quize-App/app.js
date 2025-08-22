@@ -1,4 +1,3 @@
-
 const questions = [
   {
     question: 'What is 2 + 2?',
@@ -32,4 +31,40 @@ const questions = [
       { text: '8', correct: true }
     ]
   }
-]
+];
+
+
+//  selecting elements
+const startBtn = document.getElementById("start-btn");
+const questionContainer = document.getElementById("question-container");
+const questionElement = document.getElementById("question")
+const ansElement = document.getElementById("btn")
+
+
+let scuffleQuestions , currentQuestionIndex
+
+startBtn.addEventListener("click", startQuiz)
+
+//  start quiz
+function startQuiz() {
+
+}
+
+// next question
+function setNextQuestion() {
+  
+
+}
+
+// show question
+function showQuestion(){
+
+  
+
+}
+
+
+// select answer
+function selectAnswer(params) {
+  
+}
