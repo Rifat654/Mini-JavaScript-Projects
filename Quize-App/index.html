@@ -4,44 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link of style css -->
     <link rel="stylesheet" href="style.css">
     <title>Quiz App</title>
-
-
 </head>
 
 <body>
-    <section class="main">
 
-        <div class="container">
-            <div class="col">
-                <h3 id="questionBox">
-                    1-> Lorem ipsum dolor sit amet, consectetur adipisicing elit Debitis?
-                </h3>
-            </div>
-            <div class="col box">
-                <input name="option" type="radio" id="first" value="a" required>
-                <label for="first">Testing 1</label>
-            </div>
-            <div class="col box">
-                <input name="option" type="radio" id="second" value="b" required>
-                <label for="second">Testing 2</label>
-            </div>
-            <div class="col box">
-                <input name="option" type="radio" id="third" value="c" required>
-                <label for="third">Testing 3</label>
-            </div>
-            <div class="col box">
-                <input name="option" type="radio" id="fourth" value="d" required>
-                <label for="fourth">Testing 4</label>
-            </div>
-            <button id="submit">Submit</button>
-        </div>
 
-    </section>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-btn" class="btn-grid">
+                <button class="btn">Answer-1</button>
+                <button class="btn">Answer-2</button>
+                <button class="btn">Answer-3</button>
+                <button class="btn">Answer-4</button>
 
-    <script src="app.js"></script>
+            </div>
+            <div>
+                <div class="controls">
+                    <button id="start-btn" class="start-btn btn">start</button>
+                    <button id="next-btn" class="next-btn btn hide">next</button>
+                </div>
+            </div>
+
+            <script src="app.js"></script>
 </body>
 
 </html>
