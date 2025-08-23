@@ -1,10 +1,11 @@
+// selecting  elements
 const slider = document.querySelector(".slider");
-
+const dotsContainer = document.querySelector(".dots-container")
 
 async function fetchImages() {
     try{
 
-        const response = await fetch("https://picsum.photos/v2/list?page=2&limit=10", {
+        const response = await fetch("https://picsum.photos/v2/list?page=2&limit=5", {
             method: "GET"
         });
 
@@ -22,14 +23,17 @@ async function fetchImages() {
 
 function displayImage( getImgList) {
 
-    slider.style.width = "300px";
-    slider.style.height = "300px";
+  
     slider.innerHTML = getImgList.map((item) => `
         <div class="slide">
         
-        <img  src="${item.download_url}" alt="Image by ${item.author}" />
+        <img  src="${item.download_url}" alt=${item.id}" />
         </div>
-        `)
+        `).join(" ")
+
+        dotsContainer.innerHTML = getImgList.map((item, index) => `
+         <span class = "dots"data-slide=${index} ></span>
+        `).join(" ")
 }
 
 

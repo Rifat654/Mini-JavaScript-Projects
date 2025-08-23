@@ -1,10 +1,89 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-.slider{
-    position: absolute;
+html, body{
+    width: 100%;
+    height: 100%;
 }
+
+body{
+   
+    background-color: #2b0445;
+    position: relative;
+    color: white;
+}
+
+
+.main-heading{
+    text-align: left;
+    margin: 2rem 0;
+    font-size:19px;
+    color: #f0f0f0;
+}
+.slider{
+    width:45rem;
+    height: 25rem;
+  
+    position: relative;
+    overflow: hidden;
+    margin:  0 auto;
+
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height:25rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      background-color: green;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.slider-btn{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    padding: 0 1rem;
+}
+
+@media screen and (max-width:815px){
+    .slider{
+        width: 80%;
+        height: 20rem;
+    }
+    .slide img{
+        object-fit: cover;
+    }
+    .slider-btn{
+        padding: 0 0.5rem;
+        top: 35%;
+    }
+} 
+@media screen and (max-width:545px){
+    .slider{
+        width: 70%;
+        height: 20rem;
+    }
+    .slide img{
+        object-fit: cover;
+    }
+    .slider-btn{
+        padding: 0 0.5rem;
+        top: 35%;
+    }
+} 
