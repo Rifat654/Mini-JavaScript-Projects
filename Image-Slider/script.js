@@ -22,7 +22,7 @@ async function fetchImages() {
 
 function displayImage( getImgList) {
 
-    slider.style.width = "500px";
+    slider.style.width = "300px";
     slider.style.height = "300px";
     slider.innerHTML = getImgList.map((item) => `
         <div class="slide">
