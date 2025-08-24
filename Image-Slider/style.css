@@ -71,13 +71,21 @@ body{
   
 }
 
-.dotsContainer .dots{
-    width: 30px;
-    height: 10px;
-    border-radius: 10px;
-    background-color: black;
+.dots-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
 }
 
+.dots-container .dot{
+    margin-top: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
 
 
 
@@ -94,7 +102,7 @@ body{
     }
     .slider-btn{
         padding: 0 0.5rem;
-        top: 35%;
+        top: 43%;
     }
 } 
 @media screen and (max-width:545px){
@@ -110,6 +118,6 @@ body{
     }
     .slider-btn{
         padding: 0 0.5rem;
-        top: 70%;
+        top: 60%;
     }
 } 
