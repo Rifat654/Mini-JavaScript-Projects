@@ -42,7 +42,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-      background-color: green;
 }
 
 .slide img{
@@ -57,7 +56,7 @@ body{
     justify-content: space-between;
     position: absolute;
     width: 100%;
-    top: 50%;
+    top: 40%;
     padding: 0 1rem;
 }
 
