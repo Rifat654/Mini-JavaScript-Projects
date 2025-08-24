@@ -57,16 +57,40 @@ body{
     position: absolute;
     width: 100%;
     top: 40%;
-    padding: 0 1rem;
+    padding: 0 15px;
 }
 
-@media screen and (max-width:815px){
+.btn-slide{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 18px;
+  
+}
+
+.dotsContainer .dots{
+    width: 30px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+
+
+
+/* responsive for small device */
+
+@media screen and (max-width:835px){
     .slider{
         width: 80%;
         height: 20rem;
     }
     .slide img{
-        object-fit: cover;
+        background-position: center;
+        object-fit: cover  ;
     }
     .slider-btn{
         padding: 0 0.5rem;
@@ -75,14 +99,17 @@ body{
 } 
 @media screen and (max-width:545px){
     .slider{
-        width: 70%;
+        width: 95%;
+        height: auto;
+        margin: 0 5px;
         height: 20rem;
     }
     .slide img{
-        object-fit: cover;
+         background-position: center;
+        object-fit: cover  ;
     }
     .slider-btn{
         padding: 0 0.5rem;
-        top: 35%;
+        top: 70%;
     }
 } 
