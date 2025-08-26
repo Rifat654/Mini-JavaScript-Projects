@@ -16,7 +16,8 @@ const slideImage = () =>{
 
 // sliding functions //
 const goPrev = () =>{
-    counter --
+    //  counter = (counter - 1 + slides.length) % slides.length;
+    counter  = counter === 0 ? slides.length -1 : counter -1;
     slideImage()
   
     
@@ -26,7 +27,8 @@ const goPrev = () =>{
 
 
 const goNext = () =>{
-    counter ++
+    //   counter = (counter + 1) % slides.length;
+    counter  = counter === slides.length  -1 ? 0 : counter +1;
     slideImage()
 
 }
