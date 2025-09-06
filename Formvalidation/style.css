@@ -32,10 +32,23 @@
     background: transparent;
     color: white;
     padding: 8px 25px;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
     outline: none;
-    border: 1px solid rgb(229, 221, 221);
+    border: 1.5px solid rgb(229, 221, 221);
     border-radius: 15px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+
+}
+
+.box span{
+    font-size: 11px;
+    color: red;
+  
 }
 
 #btn{
