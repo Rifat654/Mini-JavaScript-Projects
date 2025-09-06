@@ -6,10 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style css file -->
     <link rel="stylesheet" href="style.css">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>js form validation</title>
 </head>
 
 <body>
+
+    <div class="container">
+        <form>
+
+            <div class="bar">
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </div>
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name">
+                <span id="name-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Phone No.</label>
+                <input type="tel" placeholder="123 456 7890">
+                <span id="phone-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Email Id</label>
+                <input type="email" placeholder="Enter Email">
+                <span id="email-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Your Message</label>
+                <textarea rows="5" placeholder="Enter your message"></textarea>
+                <span id="message-error"></span>
+            </div>
+
+            <div class="box">
+                <button>Submit</button>
+                <span id="submit-error"></span>
+            </div>
+        </form>
+
+
+        <div class="useful-links">
+            <a href="https://youtu.be/fz8bwvn9lA4">Watch Video</a>
+            <a href="https://www.youtube.com/c/EasyTutorialsVideo?sub_confirmation=1">Visit Channel</a>
+        </div>
+
+    </div>
+
 
     <!-- js file  -->
     <script src="app.js"></script>
