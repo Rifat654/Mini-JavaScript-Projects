@@ -14,12 +14,16 @@ form.addEventListener("submit", (e)=>{
      var email_check = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
      
     if(name.value === "" || name.value == null){
+
         e.preventDefault();
-
-          
-
         N_error.innerHTML = "Name is required";
       
+
+    } 
+    if(!email.value.match( email_check)){
+
+          e.preventDefault();
+        E_error.innerHTML = "Valid Email is required";
 
     }
 
