@@ -20,13 +20,18 @@ body{
 }
 
 .container{
-    width: 500px;
-    height: auto;
     background: #21313e;
     box-shadow: 1px 4px 10px  #91a2c4;
     border-radius: 8px;
+    padding: 10px 15px;
+}
+
+.sub-container{
+    border: 2px solid #91a2c4;
+    border-radius: 8px;
     padding: 20px;
 }
+
 h1{
     font-size: 18px;
 }
@@ -37,6 +42,8 @@ p{
 }
 
 .sub-container{
+     width: 450px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,5 +57,59 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+#progress-Bar{
+    width: 250px;
+    height: 7px;
+    margin-top: 5px;
+    background-color: #265f6b;
+    border-radius: 8px;
+}
+
+#progress{
+    width: 50%;
+    height: 7px;
+    margin-top: 5px;
+    background-color:rgb(43, 164, 164);
+    border-radius: 8px;
+}
+
+#num{
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+}
+
+
+.form{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+#input{
+    flex: 1;
+    padding: 7px 0px 7px 10px;
+    font-weight: 500;
+    font-size:15px;
+    background: transparent;
+    outline: none;
+    color: #ffff;
+    border: 2px solid #3898ac;
+    border-radius: 8px;
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    background-color: #265f6b;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
     color: white;
+    font-size: 16px;
+
 }
