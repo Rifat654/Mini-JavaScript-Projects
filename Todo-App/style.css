@@ -94,10 +94,10 @@ p{
     flex: 1;
     padding: 7px 0px 7px 10px;
     font-weight: 500;
-    font-size:15px;
+    font-size:14px;
     background: transparent;
     outline: none;
-    color: #ffff;
+    color: #e6e1e1;
     border: 2px solid #3898ac;
     border-radius: 8px;
 }
@@ -112,4 +112,10 @@ p{
     color: white;
     font-size: 16px;
 
+}
+#input::placeholder{
+    color: #91a2c4;
+    font-weight: 500;
+    font-size: 14px;
+    opacity: 0.7;
 }
