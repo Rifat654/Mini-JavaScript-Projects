@@ -1,8 +1,8 @@
 let task = [];
 // get elements
-let btn = document.getElementById("newTask");
 let input = document.getElementById("input");
 let list = document.getElementById("taskList");
+let btn = document.getElementById("newTask");
 
 // event listener for add button
 btn.addEventListener("click", (e) =>{
