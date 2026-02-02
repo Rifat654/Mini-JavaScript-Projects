@@ -25,44 +25,25 @@ const data = [
   },
 ];
 
-const accordionContainer = document.querySelector(".accordion");
+const FAQ = document.querySelector(".FAQ");
 
-function accordionData() {
-    accordionContainer.innerHTML = data.map((item) =>`
-     <div class="accordion_item">
-      
-     <div class="accordion_tittle">
-       <h3>${item.question}</h3>
-      <i class="fa-solid fa-plus"></i>
-     
+const renderFAQ = () => {
+   FAQ.innerHTML = data.map((item) => {
+      return `
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>${item.question}</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>${item.answer}</p>
+        </div>
       </div>
-       <div class="accordion_text">
-       <p >${item.answer}</p>
-       </div>
-     </div>
-   
-    `).join(" ")
+      `;
+    }).join("");
+    
+
 
 }
 
-accordionData()
-
-const accordionItems = document.querySelectorAll(".accordion_tittle");
-
-// console.log(accordionItems);
-
-accordionItems.forEach( CurrentItem =>{
-    CurrentItem.addEventListener("click", (e) =>{
-
-        if(CurrentItem.classList.contains("active")){
-         CurrentItem.classList.remove("active");   
-        }
-        else{
-            let getActive = document.querySelectorAll(".active")
-            getActive.forEach(CurrentItem =>{
-                CurrentItem.classList.remove("active");
-            })
-            CurrentItem.classList.add("active")
-        }
-    })
-})
+renderFAQ()
