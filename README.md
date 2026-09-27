@@ -1,6 +1,6 @@
 # Master Javascript Zero to Hero
 
-# JavaScript Fundamentals
+## JavaScript Fundamentals
 
 > **JavaScript** is a high-level, dynamically typed programming language mainly used to make web pages interactive and to build modern frontend, backend, desktop, and server-side applications.
 
