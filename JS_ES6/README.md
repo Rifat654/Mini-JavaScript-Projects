@@ -2,7 +2,7 @@
 
 ## 📌 ES6 / Modern JavaScript
 
-- [ ] let / const
+- [ ] `let` / `const`
 - [ ] Template Literals
 - [ ] Arrow Functions
 - [ ] Destructuring
