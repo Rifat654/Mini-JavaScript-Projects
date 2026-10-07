@@ -8,3 +8,6 @@ console.log(a === b);
 
 console.log(typeof b);
 console.log(typeof NAN);
+
+
+
