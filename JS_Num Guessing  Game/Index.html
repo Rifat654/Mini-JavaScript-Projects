@@ -9,14 +9,23 @@
 </head>
 
 <body>
+    <!-- Main game container -->
     <main class="body">
+        <!-- Game box section -->
         <div class="container">
             <h1>Number Guessing Game</h1>
-            <p>Guess a number between 1 and 100:</p>
-            <input type="number" id="guessInput" min="1" max="100">
-            <button id="submitGuess">Submit Guess</button>
-            <p id="message"></p>
-            <p id="attempts"></p>
+            <p>Guess a number between 1 and 100</p>
+
+            <!-- Guess number input field -->
+            <form class="guessForm">
+                <input type="text" id="guessField" class="guessField">
+                <input type="submit" value="Submit guess" class="guessBtn">
+            </form>
+            <!-- Result phase Section -->
+            <div class="resultPhase">
+                <p>Previous guess: <span id="previousGuess"></span></p>
+                <p>Guess count: <span id="guessCount"></span></p>
+            </div>
         </div>
     </main>
 
