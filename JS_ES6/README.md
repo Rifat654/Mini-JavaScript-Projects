@@ -18,10 +18,9 @@
 
 **Definition:** let and const are JavaScript keywords used to declare block-scoped variables. let allows reassignment, while const does not allow reassignment.
 
-```
-
- let age = 23;
- age = 24; // Allowed
+```js
+let age = 23;
+age = 24; // Allowed
 
 const name = "Rifat";
 // name = "Rahim"; // TypeError
@@ -29,11 +28,11 @@ const name = "Rifat";
 
 **Note** Remember: A const array or object can still have its contents modified.
 
-```
-   const skills = ["HTML", "CSS"];
-   skills.push("JavaScript"); // Allowed
+```js
+const skills = ["HTML", "CSS"];
+skills.push("JavaScript"); // Allowed
 ```
 
 ## Arrow functions
 
-**Defi**
+**Definition:** An arrow function is a shorter way to write a JavaScript function using the `=>` syntax.
