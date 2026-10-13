@@ -14,7 +14,7 @@
 - Nullish coalescing
 - Modules
 
-### let and const
+## let and const
 
 **Definition:** let and const are JavaScript keywords used to declare block-scoped variables. let allows reassignment, while const does not allow reassignment.
 
@@ -26,3 +26,14 @@
 const name = "Rifat";
 // name = "Rahim"; // TypeError
 ```
+
+**Note** Remember: A const array or object can still have its contents modified.
+
+```
+   const skills = ["HTML", "CSS"];
+   skills.push("JavaScript"); // Allowed
+```
+
+## Arrow functions
+
+**Defi**
