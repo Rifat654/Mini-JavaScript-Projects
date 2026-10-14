@@ -145,5 +145,5 @@ console.log(score); // 0
 ```
 
 ```
-**Note:** Unlike ||, ?? preserves valid falsy values such as 0, false, and "".
+`Note:` Unlike ||, ?? preserves valid falsy values such as 0, false, and "".
 ```
