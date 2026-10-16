@@ -144,6 +144,25 @@ const score = 0 ?? 100;
 console.log(score); // 0
 ```
 
+**Note:**
+
 ```
-`Note:` Unlike ||, ?? preserves valid falsy values such as 0, false, and "".
+ Unlike ||, ?? preserves valid falsy values such as 0, false, and "".
+```
+
+## Modules (`import` and `export`)
+
+**Definition:** JavaScript modules allow code to be organized into separate files and make selected functions, variables, or classes available to other files through export and import.
+
+```js
+export const add = (a, b) => a + b;
+
+export const subtract = (a, b) => a - b;
+```
+
+```js
+import { add, subtract } from "./math.js";
+
+console.log(add(5, 3)); // 8
+console.log(subtract(5, 3)); // 2
 ```
